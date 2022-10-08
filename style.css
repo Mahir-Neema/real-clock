@@ -1,0 +1,39 @@
+*{
+    text-align: center;
+}
+
+body {
+    background-image: url("https://cdn.pixabay.com/photo/2022/09/02/13/35/mountains-7427623_960_720.jpg ");
+    /* https://cdn.pixabay.com/photo/2022/09/02/13/35/mountains-7427623_960_720.jpg */
+    background-color: lightgray;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    align-items: center;
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+}
+
+.clock{
+    width: 25vw;
+    height: 25vw;
+    background-color: #787da26b;
+    border: 20px solid white;
+    border-radius: 50%;
+    margin: auto;
+    padding: 2rem;
+
+}
+
+.hand{
+    width: 13%;
+    height: 6px;
+    background: #ff9b00;
+    position: absolute;
+    top: 50%;
+    transform-origin: 98%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 3.7, 0.58, 2);
+}
